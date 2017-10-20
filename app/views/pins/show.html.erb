@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong class="titulo">Image:</strong>
+  <div class="row">
+  	<div class="col-md-3">
+  	<div class="well text-center pin">
+        <div class="bloque">
+  			<%= image_tag @pin.image, class: 'img-responsive foto' %>
+  		</div>
+  		<br>
+  		<strong class="titulo">Title:</strong>
+	<%= @pin.title %>
+	</div>
+	</div>
+</div>
+
+</p>
+
+<%= link_to 'Edit', edit_pin_path(@pin), class: 'btn btn-success' %> |
+<%= link_to 'Back', pins_path, class: 'btn btn-primary	' %>
