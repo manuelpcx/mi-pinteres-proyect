@@ -1,9 +1,12 @@
-<h1>Editing Pin</h1>
-<div class="row">
-	<div class="col-md-6">
-		<%= render 'form', pin: @pin %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-3">
+			<h1>Editar Pin</h1>
+				<%= render 'form', pin: @pin %>
+				<%= link_to 'Show', @pin, class: 'btn btn-info' %> |
+				<%= link_to 'Back', pins_path, class: 'btn btn-danger' %>
+		</div>
 	</div>
 </div>
-<br>
-<%= link_to 'Show', @pin, class: 'btn btn-info' %> |
-<%= link_to 'Back', pins_path, class: 'btn btn-danger' %>
+

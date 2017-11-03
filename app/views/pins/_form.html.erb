@@ -10,20 +10,29 @@
       </ul>
     </div>
   <% end %>
-<div class="form-group">
-    <div class="field">
-      <%= f.label :title %>
-      <%= f.text_field :title, class: 'form-control' %>
-    </div>
-</div>
-  <div class="form-group">
-    <div class="field">
-      <%= f.label :image %>
-      <%= f.text_field :image, class: 'form-control' %>
-    </div>
-  </div>
   
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="row">
+      <div class="col-md-6 ">
+        <div class="well">
+              <div class="form-group">
+                <div class="field">
+                  <%= f.label :title %>
+                  <%= f.text_field :title, class: 'form-control' %>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="field">
+                  <%= f.label :image %>
+                  <%= f.text_field :image, class: 'form-control' %>
+                </div>
+              </div>   
+              <div class="actions">
+                <%= f.submit %>
+              </div>
+
+        </div>
+      </div>
+    </div>
+  
 <% end %>
+
